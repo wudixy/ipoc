@@ -1,0 +1,26 @@
+---
+- hosts: DB_SSM 
+  vars:
+      srcbasedir: /home/wudi/ipoc/icbc-axa-online
+      desthomedir: /home/appmon/ipoc
+
+  remote_user: appmon
+  tasks:
+      - name : copy v30-awr2ipoc.sh to target hosts
+        copy : src={{ srcbasedir }}/script/{{item}} dest={{ desthomedir }}/bin/{{item}}
+        with_items:
+               - v30-awr2ipoc.sh
+               - v30-awr2ipoc-allsid.sh
+
+      - name : chmod +x 
+        file : path=~/ipoc/bin/{{item}} mode="u+rwx"
+        with_items:
+               - v30-awr2ipoc.sh
+               - v30-awr2ipoc-allsid.sh
+    
+    
+      - name : add crontab
+        cron : "name='start v30-awr2ipoc' minute=6  job='{{desthomedir}}/bin/v30-awr2ipoc-allsid.sh'"
+    
+      - name : execute v30-awr2ipoc.sh
+        shell : {{desthomedir}}/bin/v30-awr2ipoc-allsid.sh

@@ -1,0 +1,8 @@
+---
+- hosts: DB_ODS
+  tasks:
+      - name: check_nmon_state
+        script : "~/ipoc/icbc-axa-online/script/checknmon.sh"
+        #command : echo {{ scriptdir }}
+        when: database 
+        

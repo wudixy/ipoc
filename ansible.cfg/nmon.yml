@@ -1,0 +1,95 @@
+---
+#ipoc自动部署配置,nmon,传输脚本，crontab
+#wudi 20161223
+- hosts: DB_WECHAT 
+  gather_facts: yes
+  vars:
+      srcbasedir: /home/wudi/ipoc/icbc-axa-online
+      desthomedir: /home/appmon/ipoc
+      killnmon: True  #是否kill已有的nmon进程
+      startnmon: True  #是否立即启动nmon捕获数据到当天24点
+  remote_user: appmon
+  tasks:
+      - name : create dir
+        file : path={{item}} state=directory mode=0755
+        with_items:
+                - ipoc
+                - "{{ desthomedir }}/bin"
+                - "{{ desthomedir }}/nmondata"
+
+      - name : 传输nmon put nmon @CENTOS7 or @RedHat7
+        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_rhel72 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
+        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "7"
+      - name : 传输nmon  put nmon @CENTOS6 or @Redhat6
+        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_rhel65 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
+
+        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "6"
+      - name : 传输nmon  put nmon @CENTOS5 or @RedHat5
+        copy: src={{ srcbasedir }}/nmonkit/nmon_x86_64_rhel54 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
+
+        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "5"
+      - name : 传输nmon  put nmon @SLES11
+        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_sles113 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
+
+        when: ansible_distribution == 'SLES' and ansible_distribution_major_version == "11"
+      - name : 传输nmon  put nmon @SLES10
+        copy: src={{ srcbasedir }}/nmonkit/nmon_x86_64_sles11_oldest dest={{ desthomedir }}/bin/nmon mode="u=rwx"
+        when: ansible_distribution == 'SLES' and ansible_distribution_major_version == "10"
+
+
+      - name : 传输脚本 
+        copy : src={{ srcbasedir }}/script/{{item}} dest={{ desthomedir }}/bin/{{item}} mode="u=rwx"
+        with_items:
+                - snmon_nowto24.sh
+                - v30-nmon2ipoc.sh
+
+#      - name : 增加执行权限 chmod +x nmon
+#        file : path={{ desthomedir }}/bin/{{item}} mode="u+rwx"
+#        with_items:
+#                - nmon
+#                - snmon_nowto24.sh
+#                - v30-nmon2ipoc.sh
+
+      - name : 停止已有采集脚本
+        command : ps -ef | grep {{ desthomedir }}/bin/nmon | grep -v grep | awk '{print $2}' | xargs kill
+        ignore_errors: yes 
+        when: "{{ killnmon }} == True"
+
+      - name : 调用脚本,启动NMON采集数据call snmon_nowto24.sh
+        shell : "{{ desthomedir }}/bin/snmon_nowto24.sh"
+        when: "{{ startnmon }} == True"
+
+      - name : 添加nmon到crontab add crontab
+        cron : "name='ipoc_nmon' minute=0 hour=0 job='{{ desthomedir }}/bin/nmon -f -t -s 60 -c 1440 -m {{ desthomedir }}/nmondata > /dev/null 2>&1' user=appmon"
+
+      - name : 添加传输脚本到crontab add crontab v30-nmon2ipoc.sh
+        cron : "name='ipoc_ftp_nmondata to logcenter' minute=5 job='{{ desthomedir }}/bin/v30-nmon2ipoc.sh' user=appmon"
+
+      - name : sleep wait nmon make data
+        command : sleep 1
+
+      - name : sentData2ipoc
+        shell : "{{ desthomedir }}/bin/v30-nmon2ipoc.sh"
+
+      # 对数据数据库，额外增添如下处理AWR的动作 
+      - name : copy v30-awr2ipoc.sh to target hosts
+        copy : src={{ srcbasedir }}/script/{{item}} dest={{ desthomedir }}/bin/{{item}} mode="u=rwx"
+        with_items:
+               - v30-awr2ipoc.sh
+               - v30-awr2ipoc-allsid.sh
+        when: database
+
+#      - name : chmod +x 
+#        file : path=~/ipoc/bin/{{item}} mode="u+rwx"
+#        with_items:
+#               - v30-awr2ipoc.sh
+#               - v30-awr2ipoc-allsid.sh
+    
+    
+      - name : add crontab
+        cron : "name='ipoc_ftp_awrdata' minute=6  job='{{desthomedir}}/bin/v30-awr2ipoc-allsid.sh'"
+        when: database
+    
+      - name : execute v30-awr2ipoc.sh
+        shell : "{{desthomedir}}/bin/v30-awr2ipoc-allsid.sh"
+        when: database

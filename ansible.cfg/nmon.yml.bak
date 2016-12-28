@@ -1,0 +1,86 @@
+---
+- hosts: LOG 
+  vars:
+      srcbasedir: /home/wudi/ipoc/icbc-axa-online
+      desthomedir: /home/appmon/ipoc
+  remote_user: appmon
+  tasks:
+      - name : create dir
+        file : path={{item}} state=directory mode=0755
+        with_items:
+                - ipoc
+                - {{ desthomedir }}/bin
+                - {{ desthomedir }}/nmondata
+#      - name: 删除IPOC目录/delete ipoc dir 
+#        command: rm -rf ipoc
+#      -name : create dir
+#        command: mkdir {{item}}
+#        with_items:
+#            - ipoc
+#            - {{ desthomedir }}/bin
+#            - {{ desthomedir }}/nmondata
+#      - name : 创建IPOC目录/create ipoc dir
+#        command: mkdir ipoc
+#      - name : 创建BIN目录 create ipoc/bin
+#        command: mkdir {{ desthomedir }}/bin
+#      - name : 创建nmondata目录 create ipoc/nmondata
+#        command: mkdir {{ desthomedir }}/nmondata
+        #- name : 创建nmon数据目录 create nmondata
+        #command: mkdir {{ desthomedir }/nmondata
+
+      - name : 传输nmon put nmon @CENTOS7 or @RedHat7
+        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_rhel72 dest={{ desthomedir }}/bin/nmon
+        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "7"
+      - name : 传输nmon  put nmon @CENTOS6 or @Redhat6
+        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_rhel65 dest={{ desthomedir }}/bin/nmon
+        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "6"
+      - name : 传输nmon  put nmon @CENTOS5 or @RedHat5
+        copy: src={{ srcbasedir }}/nmonkit/nmon_x86_64_rhel54 dest={{ desthomedir }}/bin/nmon
+        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "5"
+      - name : 传输nmon  put nmon @SLES11
+        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_sles113 dest={{ desthomedir }}/bin/nmon
+        when: ansible_distribution == 'SLES' and ansible_distribution_major_version == "11"
+      - name : 传输nmon  put nmon @SLES10
+        copy: src={{ srcbasedir }}/nmonkit/nmon_x86_64_sles11_oldest dest={{ desthomedir }}/bin/nmon
+        when: ansible_distribution == 'SLES' and ansible_distribution_major_version == "10"
+
+
+      - name : 传输脚本 
+        copy : src={{ srcbasedir }}/script/{{item}} dest={{ desthomedir }}/bin/{{item}}
+        with_items:
+                - snmon_nowto24.sh
+                - v30-nmon2ipoc.sh
+
+      - name : 增加执行权限 chmod +x nmon
+        file : path={{ desthomedir }}/bin/nmon mode="u+rwx"
+        with_items:
+                - nmon
+                - snmon_nowto24.sh
+                - v30-nmon2ipoc.sh
+
+      - name : 停止已有采集脚本
+        command : ps -ef | grep {{ desthomedir }}/bin/nmon | grep -v grep | awk '{print $2}' | xargs kill
+
+      - name : 调用脚本,启动NMON采集数据call snmon_nowto24.sh
+        shell : "{{ desthomedir }}/bin/snmon_nowto24.sh"
+
+      - name : 添加nmon到crontab add crontab
+        cron : "name='start nmon' minute=0 hour=0 job='{{ desthomedir }}/bin/nmon -f -t -s 60 -c 1440 -m {{ desthomedir }}/nmondata > /dev/null 2>&1' user=appmon"
+
+      - name : 添加传输脚本到crontab add crontab v30-nmon2ipoc.sh
+        cron : "name='ftp ipoc data to logcenter' minute=5 job='{{ desthomedir }}/bin/v30-nmon2ipoc.sh' user=appmon"
+
+      - name : 增加执行权限 chmod +x snmon_nowto24
+        file : path={{ desthomedir }}/bin/snmon_nowto24.sh mode="u+rwx"
+    #  - name : call snmon_nowto24.sh 本地脚本在远程执行
+    #    script : ./script/snmon_nowto24.sh
+
+
+      - name : 传输v30-nmon2ipoc.sh copy v30-nmon2ipoc.sh to target
+        copy : src={{ srcbasedir }}/script/v30-nmon2ipoc.sh dest={{ desthomedir }}/bin/v30-nmon2ipoc.sh
+      - name : chmod +x v30-nmon2ipoc.sh
+        file : path={{ desthomedir }}/bin/v30-nmon2ipoc.sh mode="u+rwx"
+      - name : sleep wait nmon make data
+        command : sleep 5
+      - name : 传输测试 execute v30-nmon2ipoc.sh
+        shell : "{{ desthomedir }}/bin/v30-nmon2ipoc.sh"
