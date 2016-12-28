@@ -69,6 +69,13 @@ $ ansible all -m ping -u bruce --sudo
 $ ansible all -m ping -u bruce --sudo --sudo-user batman
 $ ansible all -a "/bin/echo hello"
 ```
+
+## ansible对目标机器的要求
+要求目标机器安装python，并且版本高于2.4，但对于2.4版本的python,需要安装python-simplejson
+如果无法满足，依然可以使用raw,script模块
+ansible all -m raw -a "ps -ef | grep abc"
+ansible all -m script -a "abc.sh" #将本地脚本传输的远程执行
+
 ## ansible playbook
 例如上面例子中的  ansible -m ping/setup/,这些都是ansible提供的模块，可以直接使用，并获取返回值，例如
 ```

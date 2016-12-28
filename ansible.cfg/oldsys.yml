@@ -1,8 +1,8 @@
 ---
 #ipoc自动部署配置,nmon,传输脚本，crontab
 #wudi 20161223
-- hosts: APP_IMG
-  #gather_facts: False
+- hosts: NOVPLEBA02,NOVPLEBA02 
+  gather_facts: False
   vars:
       srcbasedir: /home/wudi/ipoc
       desthomedir: /home/appmon/ipoc
@@ -17,25 +17,8 @@
                 - "{{ desthomedir }}/bin"
                 - "{{ desthomedir }}/nmondata"
 
-      - name : 传输nmon put nmon @CENTOS7 or @RedHat7
-        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_rhel72 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
-        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "7"
-      - name : 传输nmon  put nmon @CENTOS6 or @Redhat6
-        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_rhel65 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
-
-        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "6"
-      - name : 传输nmon  put nmon @CENTOS5 or @RedHat5
-        copy: src={{ srcbasedir }}/nmonkit/nmon_x86_64_rhel54 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
-
-        when: (ansible_distribution == 'RedHat' or ansible_distribution == 'CentOS') and ansible_distribution_major_version == "5"
-      - name : 传输nmon  put nmon @SLES11
-        copy: src={{ srcbasedir }}/nmonkit/nmon16e_x86_sles113 dest={{ desthomedir }}/bin/nmon mode="u=rwx"
-
-        when: ansible_distribution == 'SLES' and ansible_distribution_major_version == "11"
       - name : 传输nmon  put nmon @SLES10
         copy: src={{ srcbasedir }}/nmonkit/nmon_x86_64_sles11_oldest dest={{ desthomedir }}/bin/nmon mode="u=rwx"
-        when: ansible_distribution == 'SLES' and ansible_distribution_major_version == "10"
-
 
       - name : 传输脚本 
         copy : src={{ srcbasedir }}/script/{{item}} dest={{ desthomedir }}/bin/{{item}} mode="u=rwx"
@@ -73,12 +56,12 @@
         shell : "{{ desthomedir }}/bin/v30-nmon2ipoc.sh"
 
       # 对数据数据库，额外增添如下处理AWR的动作 
-      - name : copy_v30-awr2ipoc.sh
+      - name : copy v30-awr2ipoc.sh to target hosts
         copy : src={{ srcbasedir }}/script/{{item}} dest={{ desthomedir }}/bin/{{item}} mode="u=rwx"
         with_items:
                - v30-awr2ipoc.sh
                - v30-awr2ipoc-allsid.sh
-        when: database is defined 
+        when: database
 
 #      - name : chmod +x 
 #        file : path=~/ipoc/bin/{{item}} mode="u+rwx"
@@ -89,8 +72,8 @@
     
       - name : add crontab
         cron : "name='ipoc_ftp_awrdata' minute=6  job='{{desthomedir}}/bin/v30-awr2ipoc-allsid.sh'"
-        when: database is defined 
+        when: database
     
       - name : execute v30-awr2ipoc.sh
         shell : "{{desthomedir}}/bin/v30-awr2ipoc-allsid.sh"
-        when: database is defined 
+        when: database
