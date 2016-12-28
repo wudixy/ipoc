@@ -1,0 +1,18 @@
+---
+#检查节点是否工作正常
+#wudi 20161228
+- hosts: LOG
+  gather_facts: True
+  vars:
+      srcbasedir: /home/wudi/ipoc
+      desthomedir: /home/appmon/ipoc
+      logcenter: 84.239.97.140
+  remote_user: appmon
+  tasks:
+      - name : check-nmon-process
+        script : "{{ srcbasedir }}/script/test-nmon.sh"
+        ignore_errors: yes 
+
+      - name : check-ftp
+        script : "{{ srcbasedir }}/script/test-ftp.sh"
+        ignore_errors: yes 
