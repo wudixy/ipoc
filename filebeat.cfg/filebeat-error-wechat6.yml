@@ -1,0 +1,65 @@
+filebeat:
+  # List of prospectors to fetch data.
+  prospectors:
+    # Each - is a prospector. Below are the prospector specific configurations
+    -
+      paths:
+        - /data/apache/wechat6/error_log.*
+      document_type: wechat_error_log
+
+fields:
+    host:  wechat6
+    level: production
+    review: 1
+output:
+
+  #elasticsearch:
+    # Array of hosts to connect to.
+    # Scheme and port can be left out and will be set to the default (http and 9200)
+    # In case you specify and additional path, the scheme is required: http://localhost:9200/path
+    # IPv6 addresses should always be defined as: https://[2001:db8::1]:9200
+    #hosts: ["192.168.1.1:9200"]
+  redis:
+    # Set the host and port where to find Redis.
+    # redis server IP
+    host: "84.239.97.141"
+    port: 6379
+
+    # Uncomment out this option if you want to store the topology in Redis.
+    # The default is false.
+    save_topology: true
+
+    # Optional index name. The default is filebeat and generates filebeat keys.
+    # as redis key
+    index: "filebeat_wechat_error_log"
+
+    # Optional Redis database number where the events are stored
+    # The default is 0.
+    db: 0
+
+    # Optional Redis database number where the topology is stored
+    # The default is 1. It must have a different value than db.
+    db_topology: 1
+
+    # Optional password to authenticate with. By default, no
+    # password is set.
+    # password: ""
+
+    # Optional Redis initial connection timeout in seconds.
+    # The default is 5 seconds.
+    timeout: 5
+
+    # Optional interval for reconnecting to failed Redis connections.
+    # The default is 1 second.
+    reconnect_interval: 1
+shipper:
+  name: 84.239.97.140
+  tags: ["wechat"]
+logging:
+  level: info
+  to_files: true
+  files:
+    path: /var/log
+    name: wechat6_error_log.log
+    keepfiles: 7
+    rotateeverybytes: 10485760 # 10 MB

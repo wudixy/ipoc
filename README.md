@@ -10,3 +10,13 @@ ansible playbook 配置文件
 
 # script
 各种采集、部署脚本
+
+#filebeat
+filebeat5.1_linux
+
+#filebeat.cfg
+access_log to redis
+error_log to redis
+
+#template
+配合ansible部署使用的模板

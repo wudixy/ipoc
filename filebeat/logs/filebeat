@@ -1,0 +1,35 @@
+2016-12-31T18:00:31+08:00 INFO Metrics logging every 30s
+2016-12-31T18:00:31+08:00 INFO Home path: [/home/wudi/ipoc/filebeat] Config path: [/home/wudi/ipoc/filebeat] Data path: [/home/wudi/ipoc/filebeat/data] Logs path: [/home/wudi/ipoc/filebeat/logs]
+2016-12-31T18:00:31+08:00 INFO Setup Beat: filebeat; Version: 5.1.1
+2016-12-31T18:00:31+08:00 INFO Activated console as output plugin.
+2016-12-31T18:00:31+08:00 INFO Publisher name: wudivm
+2016-12-31T18:00:31+08:00 INFO Flush Interval set to: 1s
+2016-12-31T18:00:31+08:00 INFO Max Bulk Size set to: 2048
+2016-12-31T18:00:31+08:00 INFO filebeat start running.
+2016-12-31T18:00:31+08:00 INFO Registry file set to: /home/wudi/ipoc/filebeat/data/registry
+2016-12-31T18:00:31+08:00 INFO Loading registrar data from /home/wudi/ipoc/filebeat/data/registry
+2016-12-31T18:00:31+08:00 INFO States Loaded from registrar: 2
+2016-12-31T18:00:31+08:00 INFO Loading Prospectors: 1
+2016-12-31T18:00:31+08:00 INFO Prospector with previous states loaded: 1
+2016-12-31T18:00:31+08:00 INFO Loading Prospectors completed. Number of prospectors: 1
+2016-12-31T18:00:31+08:00 INFO All prospectors are initialised and running with 2 states to persist
+2016-12-31T18:00:31+08:00 INFO Starting Registrar
+2016-12-31T18:00:31+08:00 INFO Start sending events to output
+2016-12-31T18:00:31+08:00 INFO Starting spooler: spool_size: 2048; idle_timeout: 5s
+2016-12-31T18:00:31+08:00 INFO Starting prospector of type: log
+2016-12-31T18:00:51+08:00 INFO Harvester started for file: /home/wudi/tmp.log
+2016-12-31T18:01:01+08:00 INFO Non-zero metrics in the last 30s: registar.states.current=2 filebeat.harvester.started=1 registrar.states.update=3 filebeat.harvester.running=1 registrar.writes=2 filebeat.harvester.open_files=1 libbeat.publisher.published_events=1 publish.events=3
+2016-12-31T18:01:14+08:00 INFO Stopping filebeat
+2016-12-31T18:01:14+08:00 INFO Stopping Crawler
+2016-12-31T18:01:14+08:00 INFO Stopping 1 prospectors
+2016-12-31T18:01:14+08:00 INFO Stopping Prospector
+2016-12-31T18:01:14+08:00 INFO Prospector channel stopped
+2016-12-31T18:01:14+08:00 INFO Prospector ticker stopped
+2016-12-31T18:01:14+08:00 INFO Reader was closed: /home/wudi/tmp.log. Closing.
+2016-12-31T18:01:14+08:00 INFO Crawler stopped
+2016-12-31T18:01:14+08:00 INFO Stopping spooler
+2016-12-31T18:01:14+08:00 INFO Stopping Registrar
+2016-12-31T18:01:14+08:00 INFO Ending Registrar
+2016-12-31T18:01:14+08:00 INFO Total non-zero values:  libbeat.publisher.published_events=1 registrar.states.update=3 filebeat.harvester.started=1 publish.events=3 filebeat.harvester.closed=1 registar.states.current=2 registrar.writes=3
+2016-12-31T18:01:14+08:00 INFO Uptime: 43.408818537s
+2016-12-31T18:01:14+08:00 INFO filebeat stopped.

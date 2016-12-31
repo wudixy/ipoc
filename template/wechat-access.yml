@@ -1,0 +1,120 @@
+filebeat:
+  # List of prospectors to fetch data.
+  prospectors:
+    # Each - is a prospector. Below are the prospector specific configurations
+    -
+      paths:
+        - /usr/local/apache/logs/access_log.*
+      document_type: wechat_access_log
+fields:
+    host: {{ nikename }}
+    level: production
+    review: 1
+
+#------------------------------- Redis output ----------------------------------
+output.redis:
+  # Boolean flag to enable or disable the output module.
+  enabled: true
+
+  # The list of Redis servers to connect to. If load balancing is enabled, the
+  # events are distributed to the servers in the list. If one server becomes
+  # unreachable, the events are distributed to the reachable servers only.
+  #hosts: ["localhost:6379"]
+  hosts: ["84.239.97.141:6379"] 
+  # The Redis port to use if hosts does not contain a port number. The default
+  # is 6379.
+  port: 6379
+  # The name of the Redis list or channel the events are published to. The
+  # default is filebeat.
+  #key: filebeat
+  key: "filebeat_wechat_access_log"
+  # The password to authenticate with. The default is no authentication.
+  #password:
+
+  # The Redis database number where the events are published. The default is 0.
+  db: 0
+
+  # The Redis data type to use for publishing events. If the data type is list,
+  # the Redis RPUSH command is used. If the data type is channel, the Redis
+  # PUBLISH command is used. The default value is list.
+  #datatype: list
+
+  # The number of workers to use for each host configured to publish events to
+  # Redis. Use this setting along with the loadbalance option. For example, if
+  # you have 2 hosts and 3 workers, in total 6 workers are started (3 for each
+  # host).
+  #worker: 1
+
+  # If set to true and multiple hosts or workers are configured, the output
+  # plugin load balances published events onto all Redis hosts. If set to false,
+  # the output plugin sends all events to only one host (determined at random)
+  # and will switch to another host if the currently selected one becomes
+  # unreachable. The default value is true.
+  #loadbalance: true
+
+  # The Redis connection timeout in seconds. The default is 5 seconds.
+  timeout: 5s
+
+  # The number of times to retry publishing an event after a publishing failure.
+  # After the specified number of retries, the events are typically dropped.
+  # Some Beats, such as Filebeat, ignore the max_retries setting and retry until
+  # all events are published. Set max_retries to a value less than 0 to retry
+  # until all events are published. The default is 3.
+  #max_retries: 3
+
+  # The maximum number of events to bulk in a single Redis request or pipeline.
+  # The default is 2048.
+  #bulk_max_size: 2048
+
+  # The URL of the SOCKS5 proxy to use when connecting to the Redis servers. The
+  # value must be a URL with a scheme of socks5://.
+  #proxy_url:
+
+  # This option determines whether Redis hostnames are resolved locally when
+  # using a proxy. The default value is false, which means that name resolution
+  # occurs on the proxy server.
+  #proxy_use_local_resolver: false
+
+  # Enable SSL support. SSL is automatically enabled, if any SSL setting is set.
+  #ssl.enabled: true
+
+  # Configure SSL verification mode. If `none` is configured, all server hosts
+  # and certificates will be accepted. In this mode, SSL based connections are
+  # susceptible to man-in-the-middle attacks. Use only for testing. Default is
+  # `full`.
+  #ssl.verification_mode: full
+
+  # List of supported/valid TLS versions. By default all TLS versions 1.0 up to
+  # 1.2 are enabled.
+  #ssl.supported_protocols: [TLSv1.0, TLSv1.1, TLSv1.2]
+
+  # Optional SSL configuration options. SSL is off by default.
+  # List of root certificates for HTTPS server verifications
+  #ssl.certificate_authorities: ["/etc/pki/root/ca.pem"]
+
+  # Certificate for SSL client authentication
+  #ssl.certificate: "/etc/pki/client/cert.pem"
+
+  # Client Certificate Key
+  #ssl.key: "/etc/pki/client/cert.key"
+
+  # Optional passphrase for decrypting the Certificate Key.
+  #ssl.key_passphrase: ''
+
+  # Configure cipher suites to be used for SSL connections
+  #ssl.cipher_suites: []
+
+  # Configure curve types for ECDHE based cipher suites
+  #ssl.curve_types: []
+
+
+shipper:
+  tags: ["wechat"]
+logging:
+  level: info
+  to_files: true
+  files:
+    path: /home/appmon/ipoc/filebeat/logs
+    name: wechat_access_log.log
+    keepfiles: 7
+    rotateeverybytes: 10485760 # 10 MB

@@ -31,7 +31,6 @@ fi
 ls $nmonDir | grep -q $yesterday
 
 if [[ $? -eq 0 ]] ; then
-#if [ -f $nmonDir/*$yesterday*.nmon ] ; then
     tar czf $nmonDir/backup/$servername-$YESTERDAY.tar.gz *$yesterday*.nmon
     mv  $nmonDir/*$yesterday*.nmon $nmonDir/backup
 #    rm  $nmonDir/*$yesterday*.nmon

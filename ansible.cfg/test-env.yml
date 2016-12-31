@@ -1,8 +1,8 @@
 ---
 #检查节点是否工作正常
 #wudi 20161228
-- hosts: LOG
-  gather_facts: True
+- hosts: all
+  gather_facts: False
   vars:
       srcbasedir: /home/wudi/ipoc
       desthomedir: /home/appmon/ipoc
@@ -12,7 +12,9 @@
       - name : check-nmon-process
         script : "{{ srcbasedir }}/script/test-nmon.sh"
         ignore_errors: yes 
+        #when: oldsys is undefined
 
       - name : check-ftp
         script : "{{ srcbasedir }}/script/test-ftp.sh"
         ignore_errors: yes 
+        #when: oldsys is undefined
