@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  tasks:
+      - name: check_filebeat
+        shell : ps -ef | grep "filebeat -e -c test.yml" | grep -v grep | wc -l
+        register: result 
+
+      - name: check_filebeat
+        shell : /home/wudi/opt/filebeat-5.2.0-linux-x86_64/filebeat -e -c /home/wudi/opt/filebeat-5.2.0-linux-x86_64/test.yml
+        when: result.stdout == "0"

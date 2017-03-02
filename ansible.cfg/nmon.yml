@@ -1,7 +1,7 @@
 ---
 #ipoc自动部署配置,nmon,传输脚本，crontab
 #wudi 20161223
-- hosts: APP_IMG
+- hosts: 84.239.49.81
   #gather_facts: False
   vars:
       srcbasedir: /home/wudi/ipoc
@@ -38,17 +38,10 @@
 
 
       - name : 传输脚本 
-        copy : src={{ srcbasedir }}/script/{{item}} dest={{ desthomedir }}/bin/{{item}} mode="u=rwx"
+        template: src={{ srcbasedir }}/template/{{item}} dest={{ desthomedir }}/bin/{{item}} mode="u=rwx"
         with_items:
                 - snmon_nowto24.sh
                 - v30-nmon2ipoc.sh
-
-#      - name : 增加执行权限 chmod +x nmon
-#        file : path={{ desthomedir }}/bin/{{item}} mode="u+rwx"
-#        with_items:
-#                - nmon
-#                - snmon_nowto24.sh
-#                - v30-nmon2ipoc.sh
 
       - name : stop nmon
         # command : ps -ef | grep {{ desthomedir }}/bin/nmon | grep -v grep | awk '{print $2}' | xargs kill
