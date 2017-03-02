@@ -1,0 +1,8 @@
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at com.ibm.ws.rsadapter.jdbc.WSJdbcStatement.pmiExecuteQuery(WSJdbcStatement.java:1728)
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at com.ibm.ws.rsadapter.jdbc.WSJdbcStatement.executeQuery(WSJdbcStatement.java:1019)
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at com.whir.ezoffice.commonBD.CommonBD.getListBySQL(CommonBD.java:172)
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at com.ibm._jsp._ezflow_5F_modify._jspService(_ezflow_5F_modify.java:1700)
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at com.ibm.ws.jsp.runtime.HttpJspBase.service(HttpJspBase.java:99)
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:668)
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at com.ibm.ws.cache.servlet.ServletWrapper.serviceProxied(ServletWrapper.java:307)
+[17-2-17 17:59:26:805 CST] 00000075 SystemErr     R 	at com.ibm.ws.cache.servlet.CacheHook.handleFragment(CacheHook.java:562)

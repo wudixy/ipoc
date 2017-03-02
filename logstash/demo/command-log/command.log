@@ -1,0 +1,12 @@
+{"TIME":"2017-03-02 08:50:02","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cd /"}
+{"TIME":"2017-03-02 08:49:19","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:51:25","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 08:49:19","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:51:59","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-02 08:52:00","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:52:02","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd "}
+{"TIME":"2017-03-02 08:59:47","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] do; ps -ef | wc -l; sleep 1; done;"}
+{"TIME":"2017-03-02 09:00:04","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] do; ps -ef | wc -l; sleep 1; done"}
+{"TIME":"2017-03-02 09:00:19","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] do; ps -ef | wc -l; sleep 1; done;"}
+{"TIME":"2017-03-02 09:00:49","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] ; do ps -ef | wc -l; sleep 1; done"}
+
