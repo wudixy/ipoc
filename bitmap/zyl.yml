@@ -1,0 +1,26 @@
+---
+#ipoc自动部署配置,elk
+#wudi 20170216
+- hosts: all 
+  #gather_facts: False
+  vars:
+        srcbasedir: "/home/wudi/ipoc/bitmap"
+        desthomedir: "/home/bitmap/bitmap" 
+        redisVersion: "3.2.7"
+        elkVersion: "5.1.1"
+        esVersion: "5.1.1"
+        logstashVersion: "5.1.1"
+        kibanaVersion: "5.1.1"
+        jdkVersion: "1.8.0_111"
+        killnmon: True  #是否kill已有的nmon进程
+        startnmon: True  #是否立即启动nmon捕获数据到当天24点
+  remote_user: bitmap
+  tasks:
+      - name : create-dir
+        file : path={{item}} state=directory mode=0755
+        with_items:
+                - "{{ desthomedir }}" 
+                - "{{ desthomedir }}/opt"
+                - "{{ desthomedir }}/conf"
+                - "{{ desthomedir }}/depkit"
+
