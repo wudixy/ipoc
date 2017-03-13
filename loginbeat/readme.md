@@ -1,5 +1,7 @@
 #关于linux系统用户登陆信息的分析
 
+[参考链接](http://blog.chinaunix.net/uid-25909722-id-2851379.html)
+
 ##1. 对应日志
 1. /var/log/message
 2. /var/log/wtmp
