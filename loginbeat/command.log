@@ -1,0 +1,323 @@
+{"TIME":"2017-03-02 08:14:52","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"source tmp.sh "}
+{"TIME":"2017-03-02 08:14:57","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 08:15:04","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat /var/log/command.log "}
+{"TIME":"2017-03-02 08:16:05","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:16:06","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi tmp.sh "}
+{"TIME":"2017-03-02 08:47:59","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:48:02","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"hostnam,e"}
+{"TIME":"2017-03-02 08:48:04","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"hostname"}
+{"TIME":"2017-03-02 08:48:08","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"test"}
+{"TIME":"2017-03-02 08:48:19","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 08:48:20","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:48:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd "}
+{"TIME":"2017-03-02 08:48:26","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:49:18","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 08:49:19","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:49:58","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"source tmp.sh "}
+{"TIME":"2017-03-02 08:50:02","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cd /"}
+{"TIME":"2017-03-02 08:49:19","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:51:25","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 08:49:19","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:51:59","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-02 08:52:00","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 08:52:02","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd "}
+{"TIME":"2017-03-02 08:59:47","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] do; ps -ef | wc -l; sleep 1; done;"}
+{"TIME":"2017-03-02 09:00:04","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] do; ps -ef | wc -l; sleep 1; done"}
+{"TIME":"2017-03-02 09:00:19","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] do; ps -ef | wc -l; sleep 1; done;"}
+{"TIME":"2017-03-02 09:00:49","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] ; do ps -ef | wc -l; sleep 1; done"}
+{"TIME":"2017-03-02 12:41:05","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 12:41:10","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 12:41:10","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwde"}
+{"TIME":"2017-03-02 12:41:11","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 12:41:12","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 12:41:13","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 12:41:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"hostname"}
+{"TIME":"2017-03-02 12:41:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ps -ef | grep abc"}
+{"TIME":"2017-03-02 12:41:38","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat /var/log/messages "}
+{"TIME":"2017-03-02 12:41:42","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat /var/log/command.log "}
+{"TIME":"2017-03-02 12:41:47","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 12:41:48","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 12:41:48","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:13:37","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 12:41:48","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:14:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 19:14:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:15:06","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:15:11","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:15:48","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:15:50","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-02 19:15:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:15:57","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi logbeat.c"}
+{"TIME":"2017-03-02 19:16:27","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:16:35","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc loginbeat.c -o logbeat"}
+{"TIME":"2017-03-02 19:15:11","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:17:25","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:17:57","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"quit"}
+{"TIME":"2017-03-02 19:16:41","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./logbeat "}
+{"TIME":"2017-03-02 19:17:59","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:19:16","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:19:16","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:19:32","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-02 19:19:32","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:19:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:16:41","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./logbeat "}
+{"TIME":"2017-03-02 19:16:41","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./logbeat "}
+{"TIME":"2017-03-02 19:16:41","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./logbeat "}
+{"TIME":"2017-03-02 19:22:16","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:22:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi logbeat.c"}
+{"TIME":"2017-03-02 19:22:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:22:29","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c "}
+{"TIME":"2017-03-02 19:26:01","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc loginbeat.c -o logingbeat"}
+{"TIME":"2017-03-02 19:26:12","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c "}
+{"TIME":"2017-03-02 19:27:59","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc loginbeat.c -o logingbeat"}
+{"TIME":"2017-03-02 19:28:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c "}
+{"TIME":"2017-03-02 19:28:15","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc loginbeat.c -o logingbeat"}
+{"TIME":"2017-03-02 19:28:27","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-02 19:19:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:19:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:14:31","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"tail -f /var/log/command.log "}
+{"TIME":"2017-03-02 19:31:36","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ssh wudi@192.168.0.106"}
+{"TIME":"2017-03-02 19:31:36","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ssh wudi@192.168.0.106"}
+{"TIME":"2017-03-02 19:19:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:34:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ps -ef | grep 11174"}
+{"TIME":"2017-03-02 19:19:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-02 19:28:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./logingbeat "}
+{"TIME":"2017-03-03 05:02:14","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:02:20","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c "}
+{"TIME":"2017-03-02 19:34:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ps -ef | grep 11174"}
+{"TIME":"2017-03-02 19:34:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ps -ef | grep 11174"}
+{"TIME":"2017-03-02 19:34:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ps -ef | grep 11174"}
+{"TIME":"2017-03-03 05:02:20","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c "}
+{"TIME":"2017-03-03 05:37:39","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:37:53","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc loginbeat.c -o loginbeat"}
+{"TIME":"2017-03-03 05:38:09","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-03 05:38:36","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:38:36","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:38:44","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat"}
+{"TIME":"2017-03-03 05:38:55","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd"}
+{"TIME":"2017-03-03 05:38:56","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:39:01","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd /var/log"}
+{"TIME":"2017-03-03 05:39:01","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:39:07","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp wtmp ~/log"}
+{"TIME":"2017-03-03 05:41:40","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-03 05:41:43","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd"}
+{"TIME":"2017-03-03 05:41:44","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd lgo"}
+{"TIME":"2017-03-03 05:41:46","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log"}
+{"TIME":"2017-03-03 05:41:47","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-03 05:38:50","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c"}
+{"TIME":"2017-03-03 05:41:58","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc loginbeat.c -o loginbeat"}
+{"TIME":"2017-03-02 19:19:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-03 05:42:05","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-03 05:42:39","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:42:40","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls -a"}
+{"TIME":"2017-03-03 05:42:44","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"rm -rf .loginbeat.tmp "}
+{"TIME":"2017-03-02 19:19:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-03 05:45:15","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"w"}
+{"TIME":"2017-03-03 05:42:49","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-03 05:51:04","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:45:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-03 05:52:19","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:52:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd /var/log"}
+{"TIME":"2017-03-03 05:52:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:52:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ll "}
+{"TIME":"2017-03-03 05:52:36","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ll | grep wtmp"}
+{"TIME":"2017-03-03 05:51:09","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:45:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-03 05:57:23","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp -r wtmp ~/log"}
+{"TIME":"2017-03-03 05:59:41","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd /etc"}
+{"TIME":"2017-03-03 05:59:42","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:59:48","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd syslog-ng/"}
+{"TIME":"2017-03-03 05:59:48","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 05:59:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi syslog-ng.conf "}
+{"TIME":"2017-03-03 06:01:40","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd .."}
+{"TIME":"2017-03-03 06:01:41","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 06:01:45","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd logrotate.d/"}
+{"TIME":"2017-03-03 06:01:45","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 06:01:48","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi syslog "}
+{"TIME":"2017-03-03 06:02:55","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd"}
+{"TIME":"2017-03-03 06:02:55","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd"}
+{"TIME":"2017-03-03 05:57:07","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-03 06:09:40","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"z2"}
+{"TIME":"2017-03-03 06:09:40","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"z2"}
+{"TIME":"2017-03-03 06:09:40","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"z2"}
+{"TIME":"2017-03-03 06:09:55","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-03 06:10:00","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi logbeat.c"}
+{"TIME":"2017-03-03 06:10:17","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ll"}
+{"TIME":"2017-03-03 06:10:25","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"rm -rf logbeat "}
+{"TIME":"2017-03-03 06:10:27","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ll"}
+{"TIME":"2017-03-03 06:14:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"who"}
+{"TIME":"2017-03-03 06:14:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"who"}
+{"TIME":"2017-03-03 06:14:33","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-03 06:14:33","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-03 06:14:33","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-03 06:14:46","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last -f"}
+{"TIME":"2017-03-03 06:14:50","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last -F"}
+{"TIME":"2017-03-03 06:10:34","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi login*.c"}
+{"TIME":"2017-03-03 06:10:34","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi login*.c"}
+{"TIME":"2017-03-03 06:10:34","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi login*.c"}
+{"TIME":"2017-03-03 05:45:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-03 06:18:13","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-03 06:15:12","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last -F | more"}
+{"TIME":"2017-03-02 09:00:49","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"while [ 1 ] ; do ps -ef | wc -l; sleep 1; done"}
+{"TIME":"2017-03-06 12:03:12","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ifconfig -a | more"}
+{"TIME":"2017-03-06 12:03:20","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cat /var/log/command.log "}
+{"TIME":"2017-03-06 12:03:26","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"dir"}
+{"TIME":"2017-03-06 12:03:28","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"quit"}
+{"TIME":"2017-03-06 12:03:29","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 12:03:29","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 12:03:29","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 12:03:39","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:03:40","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cd lo"}
+{"TIME":"2017-03-06 12:03:41","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cd"}
+{"TIME":"2017-03-06 12:03:42","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:03:43","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-06 12:03:43","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:03:49","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"vi loginbeat.c "}
+{"TIME":"2017-03-06 12:05:07","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"gcc loginbeat.c  -o loginbeat"}
+{"TIME":"2017-03-06 12:05:13","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:05:13","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:05:13","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:06:40","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:06:50","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-06 12:08:53","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:09:05","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:09:08","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"vi loginbeat.c"}
+{"TIME":"2017-03-06 12:13:36","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"lastb"}
+{"TIME":"2017-03-06 12:13:45","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-06 12:13:45","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-06 12:13:45","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-06 12:14:47","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:14:54","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cd /var/lo"}
+{"TIME":"2017-03-06 12:14:56","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cd /var/log"}
+{"TIME":"2017-03-06 12:14:57","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:15:00","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ll"}
+{"TIME":"2017-03-06 12:15:06","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"cp wtmp wtmp.bak"}
+{"TIME":"2017-03-06 12:03:29","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 12:15:37","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:03:29","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 12:15:53","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:15:55","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log"}
+{"TIME":"2017-03-06 12:15:37","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:15:37","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:16:04","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd /var"}
+{"TIME":"2017-03-06 12:16:04","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:16:06","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-06 12:16:07","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:16:25","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat /dev/"}
+{"TIME":"2017-03-06 12:16:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat /dev/null"}
+{"TIME":"2017-03-06 12:16:35","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat /dev/null2"}
+{"TIME":"2017-03-06 12:16:36","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat /dev/null"}
+{"TIME":"2017-03-06 12:17:08","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp /dev/null  /var/log/wtmp"}
+{"TIME":"2017-03-06 12:17:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp /var/log/wtmp.bak /var/log/wtmp"}
+{"TIME":"2017-03-06 12:17:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-06 12:17:31","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:17:36","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp /dev/null  /var/log/wtmp"}
+{"TIME":"2017-03-06 12:17:38","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-06 12:17:45","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cp /var/log/wtmp.bak /var/log/wtmp"}
+{"TIME":"2017-03-06 12:17:46","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"last"}
+{"TIME":"2017-03-06 12:17:53","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd /var"}
+{"TIME":"2017-03-06 12:17:54","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:17:54","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:17:56","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-06 12:17:57","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:18:00","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd "}
+{"TIME":"2017-03-06 12:18:01","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-06 12:18:01","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:18:05","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c"}
+{"TIME":"2017-03-06 12:23:25","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:15:58","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:29:39","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 12:29:42","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./a.out "}
+{"TIME":"2017-03-06 12:30:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./a.out 1 1"}
+{"TIME":"2017-03-06 12:30:06","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./a.out 1 1 1"}
+{"TIME":"2017-03-06 12:30:38","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./a.out "}
+{"TIME":"2017-03-06 12:31:06","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc logingbeat.c -o loginbeat"}
+{"TIME":"2017-03-06 12:31:10","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"gcc loginbeat.c -o loginbeat"}
+{"TIME":"2017-03-06 12:31:22","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:31:22","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:31:22","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:31:22","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-06 12:33:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 1"}
+{"TIME":"2017-03-06 12:33:44","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 "}
+{"TIME":"2017-03-06 12:33:44","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 "}
+{"TIME":"2017-03-06 12:34:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 1"}
+{"TIME":"2017-03-06 12:34:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 1"}
+{"TIME":"2017-03-06 12:23:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi loginbeat.c"}
+{"TIME":"2017-03-06 12:36:58","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 12:36:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 200"}
+{"TIME":"2017-03-06 12:36:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 200"}
+{"TIME":"2017-03-06 12:36:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 200"}
+{"TIME":"2017-03-06 12:36:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 200"}
+{"TIME":"2017-03-06 12:36:51","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 200"}
+{"TIME":"2017-03-06 15:30:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 15:30:06","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /etc/profile"}
+{"TIME":"2017-03-06 15:30:44","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 15:30:45","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-06 15:30:46","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 15:30:46","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 15:30:49","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-06 15:30:50","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 15:30:52","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-06 15:30:54","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"zyl"}
+{"TIME":"2017-03-06 15:30:56","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"wudi"}
+{"TIME":"2017-03-06 15:30:57","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"abc"}
+{"TIME":"2017-03-06 15:31:05","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /var/log/command.log "}
+{"TIME":"2017-03-06 15:31:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 15:31:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-06 15:32:55","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-06 15:33:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /etc/profile"}
+{"TIME":"2017-03-06 15:34:53","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /var/log/command.log "}
+{"TIME":"2017-03-07 05:32:56","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 05:33:00","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd /var/log"}
+{"TIME":"2017-03-07 05:33:00","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 05:33:02","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi messages "}
+{"TIME":"2017-03-07 05:38:21","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi lastlog "}
+{"TIME":"2017-03-07 05:38:24","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi messages "}
+{"TIME":"2017-03-07 05:39:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-07 05:44:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"pwd"}
+{"TIME":"2017-03-07 05:44:28","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 05:39:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-07 05:39:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-07 05:46:38","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 05:46:40","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-07 05:46:41","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 05:46:45","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat "}
+{"TIME":"2017-03-07 05:39:03","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"exit"}
+{"TIME":"2017-03-07 05:44:38","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"tail -f /var/log/messages "}
+{"TIME":"2017-03-07 05:52:01","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cat  /var/log/messages | grep 12223"}
+{"TIME":"2017-03-07 05:53:47","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"tail -f /var/log/messages "}
+{"TIME":"2017-03-07 05:53:54","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"crontab -e"}
+{"TIME":"2017-03-07 05:47:05","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"./loginbeat 1 10000"}
+{"TIME":"2017-03-07 05:53:59","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"tail -f /var/log/messages "}
+{"TIME":"2017-03-07 07:52:12","HOSTNAME":"suse87","LI":":0.0","LU":"root","NU":"root","CMD":"ifconfig -a | more"}
+{"TIME":"2017-03-07 05:53:59","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"tail -f /var/log/messages "}
+{"TIME":"2017-03-07 07:52:27","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 07:52:34","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /etc/profile"}
+{"TIME":"2017-03-07 07:55:33","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"date "+[ %Y%m%d %H:%M:%S"}
+{"TIME":"2017-03-07 07:56:00","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"date "+[ %Y%m%d %H:%M:%S `whoami` ] `history 1 | { read x cmd; echo "$cmd      from ip:$SSH_CLIENT   $SSH_TTY";"}
+{"TIME":"2017-03-07 07:56:29","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"date "+[ %Y%m%d %H:%M:%S `whoami` ] `history 1 | { read x cmd; echo "$cmd      from ip:$SSH_CLIENT   $SSH_TTY"; }"}
+{"TIME":"2017-03-07 07:56:43","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"whoami"}
+{"TIME":"2017-03-07 07:56:43","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"whoami"}
+{"TIME":"2017-03-07 07:57:17","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"echo $SSH_CLIENT"}
+{"TIME":"2017-03-07 07:57:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"echo $SSH_TTY"}
+{"TIME":"2017-03-07 07:58:12","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 07:58:16","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"cd log/"}
+{"TIME":"2017-03-07 07:58:16","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"ls"}
+{"TIME":"2017-03-07 07:58:27","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /etc/profile"}
+{"TIME":"2017-03-07 07:58:27","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /etc/profile"}
+{"TIME":"2017-03-07 08:29:30","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"history 1"}
+{"TIME":"2017-03-07 08:29:35","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /etc/profile"}
+{"TIME":"2017-03-07 08:30:55","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"source /etc/profile"}
+{"TIME":"2017-03-07 08:30:59","HOSTNAME":"suse87","LI":"192.168.0.106","LU":"root","NU":"root","CMD":"vi /etc/profile"}
